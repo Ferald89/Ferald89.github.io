@@ -1,0 +1,102 @@
+
+*{
+  margin: 0;
+}
+
+#contenedorPrincipal {
+  background-color: #9FB8D9;
+  width: 100%;
+  height: 660px;
+  position: relative;
+}
+
+#contenedorBotones {
+  background-color: #3A4D71;
+  width: 100%;
+  height: 50px;
+}
+
+#contenedorImagenes{
+  background-color: #C9E1EA;
+  width: 100%;
+  height: 520px;
+}
+
+.cuadro1{
+  display: inline-block;
+  position: relative;
+  background-color: #C9E1EA;
+  width: 45%;
+  height: 500px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px
+}
+.cuadro2{
+  display: inline-block;
+  position: relative;
+  background-color: #FFF;
+  height: 500px;
+  width: 45%;
+  margin-top: 10px;
+}
+
+#sumateBotom {
+  background-color: #3A4D71;
+  width: 100px;
+  height: 30px;
+  color: white;
+  padding-top: 11px;
+  padding-left: 30px;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 110px;
+  font-family: 'Lora', serif;
+}
+
+#laboratoria {
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  margin-top: 250px;
+  margin-left: 45%;
+}
+
+.boton {
+  color: white;
+  width: 10px;
+  height: 40px;
+  float: right;
+  margin-right: 130px;
+  margin-top: 10px;
+  font-family: 'Lora', serif;
+  text-align: center;
+}
+p {
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-size: .8em;
+}
+
+h1{
+  text-align: center;
+}
+
+.cuadradoImagen{
+  width: 90%;
+  height: 550px;
+  border-style: solid;
+  border-color: #000;
+  display:inline-block;
+  position:absolute;
+}
+
+img{
+  position: relative;
+  left: 150px;
+}
+h2{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
