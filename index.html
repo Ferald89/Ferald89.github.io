@@ -3,52 +3,72 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi pagina web 1</title>
+        <title>Fernando Aldair</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Slab&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="recursos/css/main.css">
     </head>
-<body>
-    <header id=contenedorBotones>
-        <div>
-            <figure>
-                <img src="" alt="Icon">
-            </figure>
-            <nav>
-                <ol>
-                    <a class="boton" href="">INICIO</a>
-                    <a class="boton" href="">PORTAFOLIO</a>
-                    <a class="boton" href="">CONTACTO</a>
-                </ol>
-            </nav>
-        </div>
+    <body>
+     <header class="header">
+            <div>
+                <figure class="logo">
+                    <img src="" alt="Icon">
+                </figure>
+                <nav class="menu">
+                    <ol>
+                        <li><a class="link" href="">INICIO</a></li> 
+                        <li></li><a class="link" href="">PORTAFOLIO</a></li>
+                        <li></li><a class="link" href="">CONTACTO</a></li>
+                    </ol>
+              </nav>
+           </div>
     </header>
 
-    <section id="contenedorPrincipal"> 
-        <div id="sumateBotom">SUMATE</div>
-
-        <div id="laboratoria">
-            <h1>
-                Hola! soy <strong>Fernando Aldair</strong> <br>
-                Ingeniero Mecatrónico con <br>
-                pasión por la programación
-            </h1>
-        </div>
-
+    <section class="hero"> 
+        <h1>
+            Hola! soy <strong>Fernando Aldair</strong> <br>
+            Ingeniero Mecatrónico con <br>
+            pasión por la programación
+        </h1>
+        <img src="" alt="hero">
     </section>
 
-    <section id="ContenedorImagenes">
-        <h2>Mi portafolio</h2>
-        <article class="cuadro1">
-            <h3>Comunicación PLC Servidor Remoto</h3>
-            <h6>Proyecto UDP para HITACHI</h6>
-            <img src="recursos/imagenes/brend1-mp3.jpg">
-            <p><small><strong>Fecha :</strong> 05/03/20</small></p>
-            <p class="informacionProyecto">
-            Este proyecto implicó el entendimiento de UDP para mandar y recivir mensajes
-            en un PLC mitsubichi para el etiquetado de una linea de ensamble de pistones
-            </p>
+      <section id="portafolio" class="portafolio">
+          <h2>Mi portafolio</h2>
+           <article class="project">
+              <h3 class="project-title">Comunicación PLC Servidor Remoto</h3>
+              <h6 class="project-course">Proyecto UDP para HITACHI</h6>
+              <p class="project-date"><small><strong>Fecha :</strong> 05/03/20</small></p>
+               <p class="project-descriptions">
+                   Este proyecto implicó el entendimiento de UDP para mandar y recivir mensajes
+                   en un PLC mitsubichi para el etiquetado de una linea de ensamble de pistones
+              </p>
+              <figure class="project-imageConainer">
+                <img src="recursos/imagenes/brend1-mp3.jpg" alt="proyect1" width="500px">
+              </figure>
+           </article>
+      </section>
 
-        </article>
+      <section id="cursos">
+          <h2>Más sobre mi experiencia</h2>
+          <article class="course">
+              <figure class="course-imageContainer">
+                  <img src="" alt="" width="500px">
+              </figure>
+              <h3 class="course-title">CURSO DE DESARROLLO WEB ONLINE</h3>
+              <p class="course-description">Curso de desarrollo de web</p>
+              <a class="course-url" href="">Ver Certificado</a>
+          </article>
+      </section>
 
-    </section>
-</body>
+      <section class="contact">
+        <form action="/suscription/" class="form-email">
+            <h3>¿Creamos algo juntos?</h3>
+            <input type="text" placeholder="Dejame tu email" id="email"/>
+            <button>Enviar</button>
+        </form>
+      </section>
+
+
+
+    </body>
 </html>
