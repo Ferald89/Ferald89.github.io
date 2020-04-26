@@ -1,3 +1,9 @@
+/* Paleta de colores
+azul 247ba0
+verde claro 70c1b3
+verde aciua b2dbbf
+Blanco f3ffbd */
+
 body{
   font-family: 'Fjalla One',sans-serif;
 }
@@ -9,4 +15,56 @@ h4,
 h5,
 h6{
   font-family: 'Roboto Slab', sans-serif;
+}
+
+h1{
+  font-style: 40px;
+  line-height: 2.5;
+  letter-spacing: -.2px;
+  color: white;
+  margin: 100px 150px 70px 30px;
+}
+
+h1 strong{
+  color: #1985a1;
+}
+
+.hero{
+  height: 300px;
+  background-image: url("../imagenes/fer1.jpg");
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #4c5c68;
+}
+
+.header{
+  height: 100px;
+  background-color: #46494c;
+  margin: 0px;
+  color: white;
+}
+
+.header a{
+  color: white;
+  text-decoration: none;
+}
+
+.project{
+  border-color: gray;
+  border-radius: 5x;
+  border-style: solid;
+  border-width: 1px;
+}
+.project-descriptions{
+  width: 500px;
+}
+.project-imageConainer{
+  width: 500px;
+}
+.course{
+  border-color: gray;
+  border-radius: 5x;
+  border-style: solid;
+  border-width: 1px;
 }

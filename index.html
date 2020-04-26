@@ -4,32 +4,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fernando Aldair</title>
+        <link rel="icon" type="image/png" href="./recursos/imagenes/favicon.png"/>
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Slab&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="recursos/css/main.css">
+
     </head>
     <body>
      <header class="header">
             <div>
                 <figure class="logo">
-                    <img src="" alt="Icon">
+                    <img src="./recursos/imagenes/favicon.pngssx" alt="Icon">
                 </figure>
                 <nav class="menu">
                     <ol>
-                        <li><a class="link" href="">INICIO</a></li> 
-                        <li></li><a class="link" href="">PORTAFOLIO</a></li>
-                        <li></li><a class="link" href="">CONTACTO</a></li>
+                        <li><a class="link" href="#hero">INICIO</a></li> 
+                        <li></li><a class="link" href="#portafolio">PORTAFOLIO</a></li>
+                        <li></li><a class="link" href="#cursos">CAPACITACION</a></li>
+                        <li></li><a class="link" href="#contacto">CONTACTO</a></li>
                     </ol>
               </nav>
            </div>
     </header>
 
-    <section class="hero"> 
+    <section id="hero" class="hero"> 
         <h1>
             Hola! soy <strong>Fernando Aldair</strong> <br>
             Ingeniero Mecatrónico con <br>
             pasión por la programación
         </h1>
-        <img src="" alt="hero">
+        <!-- <img src="" alt="hero"> -->
     </section>
 
       <section id="portafolio" class="portafolio">
@@ -49,18 +52,18 @@
       </section>
 
       <section id="cursos">
-          <h2>Más sobre mi experiencia</h2>
+          <h2>Más sobre mi capacitacion</h2>
           <article class="course">
               <figure class="course-imageContainer">
-                  <img src="" alt="" width="500px">
+                  <img src="./recursos/imagenes/diploma1.png" alt="django1" width="500px">
               </figure>
-              <h3 class="course-title">CURSO DE DESARROLLO WEB ONLINE</h3>
+              <h3 class="course-title">CURSO DE DJANGO</h3>
               <p class="course-description">Curso de desarrollo de web</p>
-              <a class="course-url" href="">Ver Certificado</a>
+              <a class="course-url" href="https://platzi.com/@ferald95/curso/1318-django/diploma/detalle/">Ver Certificado</a>
           </article>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contacto">
         <form action="/suscription/" class="form-email">
             <h3>¿Creamos algo juntos?</h3>
             <input type="text" placeholder="Dejame tu email" id="email"/>
