@@ -11,19 +11,17 @@
     </head>
     <body>
      <header class="header">
-            <div>
                 <figure class="logo">
-                    <img src="./recursos/imagenes/favicon.pngssx" alt="Icon">
+                    <img src="./recursos/imagenes/logo.webp" height="50px" alt="Icon">
                 </figure>
                 <nav class="menu">
                     <ol>
                         <li><a class="link" href="#hero">INICIO</a></li> 
-                        <li></li><a class="link" href="#portafolio">PORTAFOLIO</a></li>
-                        <li></li><a class="link" href="#cursos">CAPACITACION</a></li>
-                        <li></li><a class="link" href="#contacto">CONTACTO</a></li>
+                        <li><a class="link" href="#portafolio">PORTAFOLIO</a></li>
+                        <li><a class="link" href="#cursos">CAPACITACION</a></li>
+                        <li><a class="link" href="#contacto">CONTACTO</a></li>
                     </ol>
               </nav>
-           </div>
     </header>
 
     <section id="hero" class="hero"> 
@@ -35,23 +33,25 @@
         <!-- <img src="" alt="hero"> -->
     </section>
 
-      <section id="portafolio" class="portafolio">
-          <h2>Mi portafolio</h2>
+      <section id="portafolio" class="portfolio">
+          <h2>Portafolio (Proyectos Destacados)</h2>
            <article class="project">
-              <h3 class="project-title">Comunicación PLC Servidor Remoto</h3>
-              <h6 class="project-course">Proyecto UDP para HITACHI</h6>
-              <p class="project-date"><small><strong>Fecha :</strong> 05/03/20</small></p>
-               <p class="project-descriptions">
-                   Este proyecto implicó el entendimiento de UDP para mandar y recivir mensajes
-                   en un PLC mitsubichi para el etiquetado de una linea de ensamble de pistones
-              </p>
+               <div id="project-details">
+                   <h3 class="project-title">Comunicación PLC Servidor Remoto</h3>
+                   <h6 class="project-course">Proyecto UDP para HITACHI</h6>
+                   <p class="project-date"><small><strong>Fecha :</strong> 05/03/20</small></p>
+                    <p class="project-descriptions">
+                        Este proyecto implicó el entendimiento de UDP para mandar y recivir mensajes
+                        en un PLC mitsubichi para el etiquetado de una linea de ensamble de pistones
+                   </p>
+               </div>
               <figure class="project-imageConainer">
                 <img src="recursos/imagenes/brend1-mp3.jpg" alt="proyect1" width="500px">
               </figure>
            </article>
       </section>
 
-      <section id="cursos">
+      <section id="cursos" class="capacitation">
           <h2>Más sobre mi capacitacion</h2>
           <article class="course">
               <figure class="course-imageContainer">
@@ -68,10 +68,22 @@
             <h3>¿Creamos algo juntos?</h3>
             <input type="text" placeholder="Dejame tu email" id="email"/>
             <button>Enviar</button>
+
         </form>
       </section>
 
-
+      <footer class="footer">
+        <div>
+          <p> 
+            Curso De Desarrollo Web Only 2018 <img src="./recursos/imagenes/platzi.png" width="100px" alt="platzi.png">
+          </p>
+         </div>
+        <div>
+          <p>
+            Designed with <\3 by <a href="https://twiter.com/thespianartist<">@thespianartist</a>
+          </p>
+        </div>
+      </footer>
 
     </body>
 </html>

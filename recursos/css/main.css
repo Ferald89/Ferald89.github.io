@@ -6,6 +6,7 @@ Blanco f3ffbd */
 
 body{
   font-family: 'Fjalla One',sans-serif;
+  margin: 0px;
 }
 
 h1,
@@ -15,14 +16,16 @@ h4,
 h5,
 h6{
   font-family: 'Roboto Slab', sans-serif;
+  font-weight: normal;
 }
 
 h1{
   font-style: 40px;
-  line-height: 2.5;
+  line-height: 1.5;
   letter-spacing: -.2px;
   color: white;
-  margin: 100px 150px 70px 30px;
+  /* margin: 100px 150px 70px 30px; */
+  object-position: center;
 }
 
 h1 strong{
@@ -36,35 +39,114 @@ h1 strong{
   background-repeat: no-repeat;
   background-position: right;
   background-color: #4c5c68;
+  display: flex;
+  align-items: center;
 }
 
-.header{
-  height: 100px;
-  background-color: #46494c;
+
+ol,
+ul  {
   margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+
+.header{
+  background-color: #46494c;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+}
+
+.menu{
+  height: inherit;
+}
+
+.header ol{
+  display: flex;
+  height: inherit;
+}
+
+.header ol li{
+  display: flex;
+  height: inherit;
 }
 
 .header a{
   color: white;
   text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
 }
 
+.portfolio{
+  background: #fafafa;
+  padding: 20px;
+}
 .project{
   border-color: gray;
   border-radius: 5x;
   border-style: solid;
   border-width: 1px;
+  margin-bottom : 15px;
+  padding: 20px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+
 }
+
+h2{
+  color: #4c5c68;
+  text-transform: uppercase;
+  font-family: 'Fjalla One',sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom:40px ;
+}
+
 .project-descriptions{
   width: 500px;
 }
 .project-imageConainer{
   width: 500px;
 }
+
+/* Empiezan a declarar los cursos */
+
+.capacitation{
+  background: #fafafa;
+  padding: 20px;
+}
+
 .course{
   border-color: gray;
   border-radius: 5x;
   border-style: solid;
   border-width: 1px;
+  padding: 20px;
+}
+
+figure {
+  margin: 0;
+}
+
+.footer{
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer img{
+  vertical-align: middle;
+}
+
+.footer a{
+  color: white;
 }
