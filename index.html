@@ -5,35 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fernando Aldair</title>
         <link rel="icon" type="image/png" href="./recursos/imagenes/favicon.png"/>
-        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="recursos/css/main.css">
 
     </head>
     <body>
      <header class="header">
-                <figure class="logo">
-                    <img src="./recursos/imagenes/logo.webp" height="50px" alt="Icon">
-                </figure>
-                <nav class="menu">
-                    <ol>
-                        <li><a class="link" href="#hero">INICIO</a></li> 
-                        <li><a class="link" href="#portafolio">PORTAFOLIO</a></li>
-                        <li><a class="link" href="#cursos">CAPACITACION</a></li>
-                        <li><a class="link" href="#contacto">CONTACTO</a></li>
-                    </ol>
-              </nav>
+       <div class="container">
+
+         <figure class="logo">
+             <img src="./recursos/imagenes/logo.webp" height="50px" alt="Icon">
+         </figure>
+         <nav class="menu">
+             <ol>
+                 <li><a class="link" href="#hero">INICIO</a></li> 
+                 <li><a class="link" href="#portafolio">PORTAFOLIO</a></li>
+                 <li><a class="link" href="#cursos">CAPACITACION</a></li>
+                 <li><a class="link" href="#contacto">CONTACTO</a></li>
+             </ol>
+       </nav>
+       </div>
     </header>
 
     <section id="hero" class="hero"> 
+      <div class="container">
         <h1>
             Hola! soy <strong>Fernando Aldair</strong> <br>
             Ingeniero Mecatrónico con <br>
             pasión por la programación
         </h1>
-        <!-- <img src="" alt="hero"> -->
+        <img class="hero-image" src="./recursos/imagenes/fer1.jpg" alt="hero" width="500px" height="300px">
+      </div>
     </section>
 
       <section id="portafolio" class="portfolio">
+        <div class="container">
           <h2>Portafolio (Proyectos Destacados)</h2>
            <article class="project">
                <div id="project-details">
@@ -46,42 +52,95 @@
                    </p>
                </div>
               <figure class="project-imageConainer">
-                <img src="recursos/imagenes/brend1-mp3.jpg" alt="proyect1" width="500px">
+                <img src="recursos/imagenes/brend1-mp3.jpg" alt="proyect1" width="400px">
               </figure>
            </article>
+        </div>
       </section>
 
-      <section id="cursos" class="capacitation">
-          <h2>Más sobre mi capacitacion</h2>
+      <div class="container">
+        <h2>Más sobre mi capacitacion</h2>
+      </div>
+
+      <section id="cursos" class="course-list">
+        <div class="container">
           <article class="course">
               <figure class="course-imageContainer">
                   <img src="./recursos/imagenes/diploma1.png" alt="django1" width="500px">
               </figure>
+              <div class="course-detail">
+                <h3 class="course-title">CURSO DE DJANGO</h3>
+                <p class="course-description">Curso de desarrollo de web</p>
+                <a class="course-url" href="https://platzi.com/@ferald95/curso/1318-django/diploma/detalle/">Ver Certificado</a>
+              </div>
+          </article>
+
+          <article class="course">
+            <figure class="course-imageContainer">
+                <img src="./recursos/imagenes/diploma1.png" alt="django1" width="500px">
+            </figure>
+            <div class="course-detail">
               <h3 class="course-title">CURSO DE DJANGO</h3>
               <p class="course-description">Curso de desarrollo de web</p>
               <a class="course-url" href="https://platzi.com/@ferald95/curso/1318-django/diploma/detalle/">Ver Certificado</a>
-          </article>
+            </div>
+         </article>
+
+         <article class="course">
+          <figure class="course-imageContainer">
+              <img src="./recursos/imagenes/diploma1.png" alt="django1" width="500px">
+          </figure>
+          <div class="course-detail">
+            <h3 class="course-title">CURSO DE DJANGO</h3>
+            <p class="course-description">Curso de desarrollo de web</p>
+            <a class="course-url" href="https://platzi.com/@ferald95/curso/1318-django/diploma/detalle/">Ver Certificado</a>
+          </div>
+         </article>
+         
+         <article class="course">
+          <figure class="course-imageContainer">
+              <img src="./recursos/imagenes/diploma1.png" alt="django1" width="500px">
+          </figure>
+          <div class="course-detail">
+            <h3 class="course-title">CURSO DE DJANGO</h3>
+            <p class="course-description">Curso de desarrollo de web</p>
+            <a class="course-url" href="https://platzi.com/@ferald95/curso/1318-django/diploma/detalle/">Ver Certificado</a>
+          </div>
+         </article>
+
+
+        
+        </div>
       </section>
 
       <section class="contact" id="contacto">
-        <form action="/suscription/" class="form-email">
-            <h3>¿Creamos algo juntos?</h3>
-            <input type="text" placeholder="Dejame tu email" id="email"/>
-            <button>Enviar</button>
-
-        </form>
+        <div class="container">
+          <form action="/suscription/" class="form-email">
+              <h3>¿Creamos algo juntos?</h3>
+              <input type="text" placeholder="Dejame tu email" id="email"/>
+              <button>Enviar</button>
+          </form>
+          <div class="social">
+            <a href="https://twitter.com/reborn9895" class="social-link twitter"></a>
+            <a href="https://www.facebook.com/fernando.aldair.5" class="social-link facebook"></a>
+            <a href="https://github.com/Ferald89" class="social-link github"></a>
+            <a href="https://www.instagram.com/feralda98/" class="social-link instagram"></a>
+          </div>
+        </div>
       </section>
 
       <footer class="footer">
-        <div>
-          <p> 
-            Curso De Desarrollo Web Only 2018 <img src="./recursos/imagenes/platzi.png" width="100px" alt="platzi.png">
-          </p>
-         </div>
-        <div>
-          <p>
-            Designed with <\3 by <a href="https://twiter.com/thespianartist<">@thespianartist</a>
-          </p>
+        <div class="container">
+          <div>
+            <p> 
+              Curso De Desarrollo Web Only 2018 <img src="./recursos/imagenes/platzi.png" width="100px" alt="platzi.png">
+            </p>
+           </div>
+          <div>
+            <p>
+              Designed with <\3 by <a href="https://twiter.com/thespianartist<">@thespianartist</a>
+            </p>
+          </div>
         </div>
       </footer>
 
