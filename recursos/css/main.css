@@ -55,6 +55,9 @@ ul  {
   list-style: none;
 }
 
+ol{
+  display: flex;
+}
 
 .header{
   background-color: #1b2127;
@@ -63,6 +66,7 @@ ul  {
   justify-content: space-between;
   height: 70px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu{
@@ -101,6 +105,7 @@ ul  {
   justify-items: center;
   justify-content: space-between;
   background: white;
+  flex-wrap: wrap;
 }
 
 h2{
@@ -134,11 +139,15 @@ h2{
 }
 
 .project-details{
-  width: 500px;
+  width: 50%;
 }
 
 .project-imageConainer{
-  width: 500px;
+  width: 50%;
+}
+
+.project-imageConainer img{
+  max-width: 100%;
 }
 
 /* Empiezan a declarar los cursos */
@@ -154,8 +163,8 @@ h2{
 }
 
 .course{
-  margin: 10px;
-  width: 470px;
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -210,9 +219,11 @@ figure {
 
 .container{
   /* border: red solid 1px; */
+  max-width: 1000px;
+  flex: 1;
   display: inherit;
   margin: 0 auto;
-  width: 1000px;
+  /* width: 1000px; */
   justify-content: inherit;
   align-items: inherit;
   flex-wrap: inherit;
@@ -281,3 +292,153 @@ figure {
 .form-email h3{
   font-family: 'Fjalla One', sans-serif;
 }
+
+/* Empezamos el mediaquery */
+
+@media screen and (max-width: 1024px){
+  .container{
+    padding: 0 1em;
+  }
+  .hero{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  .hero-image{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+  }
+  h1{
+    font-size: 2em;
+    z-index: 2;
+    /* background-color: blue; */
+  }
+}
+
+@media screen and (max-width: 767px){
+  .header{
+    display: block;
+    height: auto;
+  }
+  .header .logo{
+    text-align: center;
+  }
+
+  .header ol{
+    display: initial;
+  }
+  .header ol li{
+    height: 50px;
+    text-align: center;
+  }
+  .header a{
+    justify-content: center;
+    width: 100%;
+  }
+
+  .project{
+    display: block;
+  }
+  .project-imageConainer{
+    width: auto;
+    text-align: center;
+  }
+  .project-details{
+    width: auto;
+  }
+
+  .project-course,.project-date,.project-url{
+    margin: 0.3em 0;
+  }
+
+  .project-title{
+    font-size: 1.5em;
+  }
+   
+  .project-url{
+    font-size: 1em;
+  }
+  .project-course{
+    font-size: .7em;
+
+  }
+  .project-date{
+    font-size: 1em;
+
+  }
+  
+  .project-descriptions{
+    font-size: 0.8em;
+  }
+  
+  .course{
+    width: 100%;
+    flex-shrink: initial;
+  }
+
+  .course img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  h1{
+    font-size: 1.5em;
+    background-color: rgba(20, 29, 112, 0.171);
+  }
+
+  .project-details{
+    font-size: 12px;
+  }
+  .project-details{
+    margin: -2em .5em .5em;
+    padding: 1em;
+  }
+
+  .contact{
+    height: auto;
+    padding: 1em 0;
+    text-align: center;
+    display: block;
+  }
+  
+  .form-email button{
+    margin: 1em auto;
+  }
+
+  .form-email h3{
+    margin-top: 0;
+  }
+
+  .footer{
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+
+  }
+
+}
+
+
+@media screen and (max-width: 320px){
+  h1{
+    font-size: 1.2em;
+    background-color: rgba(20, 29, 112, 0.171);
+
+  }
+  .hero{
+    padding: 2em 1em;
+  }
+  .hero-image{
+    object-fit: cover;
+  }
+}
+
+
+
